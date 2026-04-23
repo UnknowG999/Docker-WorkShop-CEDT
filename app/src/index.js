@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
   res.json({ ok: true, service: 'workshop-app' });
 });
 
+
 app.get('/health', async (req, res) => {
   try {
     await pool.query('SELECT 1');
